@@ -180,7 +180,6 @@ internal extension ESTabBar /* Layout */ {
         if isCustomizing {
             for (idx, _) in tabBarItems.enumerated() {
                 tabBarButtons[idx].isHidden = false
-                moreContentView?.isHidden = true
             }
             for (_, container) in containers.enumerated(){
                 container.isHidden = true

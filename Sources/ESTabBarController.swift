@@ -124,7 +124,9 @@ open class ESTabBarController: UITabBarController, ESTabBarDelegate {
     
     open override func tabBar(_ tabBar: UITabBar, didEndCustomizing items: [UITabBarItem], changed: Bool) {
         if let tabBar = tabBar as? ESTabBar {
-            tabBar.updateLayout()
+            DispatchQueue.main.async {
+                    tabBar.updateLayout()
+                }
         }
     }
     
